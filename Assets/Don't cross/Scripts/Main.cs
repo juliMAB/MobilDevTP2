@@ -14,7 +14,8 @@ public class Main : MonoBehaviour {
 	private RectTransform rect;
 	private int scoreint;
 	private static int currentlevel;
-	void Start()
+	public LayerMask enemyLayer;
+    void Start()
 	{
 		rect = buttons.GetComponent<RectTransform>();
 		isGameStarted = false;
@@ -88,9 +89,9 @@ public class Main : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider col)
 	{
-		if(isGameStarted == true)
+        if (isGameStarted == true)
 		{
-			if(col.gameObject.name == "enemy(Clone)") // GAME OVER
+			if(col.tag == "Enemy")
 			{
 				joystick.gameObject.SetActive(false);
 				isGameStarted = false;
@@ -98,7 +99,7 @@ public class Main : MonoBehaviour {
 				yourscore.text = "your score: " + (scoreint - 1);
 				bestscore.text = "your best: " + PlayerPrefs.GetInt("bestscore");
 			}
-			if(col.name == "coin(Clone)")
+			if(col.tag == "Coin")
 			{
 				PlayerPrefs.SetInt("balance", PlayerPrefs.GetInt("balance") + 1);
 				Destroy(col.gameObject);

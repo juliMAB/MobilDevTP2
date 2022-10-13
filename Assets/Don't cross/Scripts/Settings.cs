@@ -7,14 +7,15 @@ public class Settings : MonoBehaviour {
 
 	public Canvas settings;
 	public Image on, off;
-	public AudioSource music;
-	public void Close()
+	public AudioSource pf_music;
+	private AudioSource music;
+    public void Close()
 	{
 		settings.gameObject.SetActive(false);
 	}
 	void Start()
 	{
-		AudioSource musicplay = Instantiate(music);
+		music = Instantiate(pf_music);
 		if(PlayerPrefs.GetInt("music") == 0)
 		{
 			on.gameObject.SetActive(true);
@@ -25,7 +26,7 @@ public class Settings : MonoBehaviour {
 		{
 			on.gameObject.SetActive(false);
 			off.gameObject.SetActive(true);
-			music.Stop();
+			music.Pause();
 		}
 	}
 	public void MusicSwitch()
@@ -43,8 +44,8 @@ public class Settings : MonoBehaviour {
 			PlayerPrefs.SetInt("music", 1); // SET MUSIC OFF
 			on.gameObject.SetActive(false);
 			off.gameObject.SetActive(true);
-			music.Stop();
-			return;
+            music.Pause();
+            return;
 		}
 	}
 }
