@@ -10,7 +10,7 @@ public class Main : MonoBehaviour {
 	public Image gamename;
 	public Text score, yourscore, bestscore, balancetext;
 	public GameObject buttons, enemy, joystick, gameoverpanel, balance, coin;
-	public bool isGameStarted, isCoinInstance;
+	public bool /*isGameStarted,*/ isCoinInstance;
 	private RectTransform rect;
 	private int scoreint;
 	private static int currentlevel;
@@ -18,7 +18,7 @@ public class Main : MonoBehaviour {
     void Start()
 	{
 		rect = buttons.GetComponent<RectTransform>();
-		isGameStarted = false;
+		StateController.Get().CurrentState = GAME_STATES.OUT_GAME; // llamar en el gm.
 		InvokeRepeating("Level1", 0, 3f);
 		InvokeRepeating("Level2", 0, 2f);
 		InvokeRepeating("Level3", 0, 1.25f);
@@ -29,8 +29,8 @@ public class Main : MonoBehaviour {
 	}
 	void Level1() // INCLUDES SCORE CONTROLLER
 	{
-		if(isGameStarted == true && currentlevel == 1) EnemySpawn();
-		if(isGameStarted == true)
+		if(StateController.Get().InGame() && currentlevel == 1) EnemySpawn();
+		if(StateController.Get().InGame())
 		{
 			score.text = (scoreint++) + "";
 			if(scoreint > PlayerPrefs.GetInt("bestscore")) PlayerPrefs.SetInt("bestscore", scoreint - 1);
@@ -38,15 +38,15 @@ public class Main : MonoBehaviour {
 	}
 	void Level2()
 	{
-		if(isGameStarted == true && currentlevel == 2) EnemySpawn();
+		if(StateController.Get().InGame() && currentlevel == 2) EnemySpawn();
 	}
 	void Level3()
 	{
-		if(isGameStarted == true && currentlevel == 3) EnemySpawn();
+		if(StateController.Get().InGame() && currentlevel == 3) EnemySpawn();
 	}
 	void Coins()
 	{
-		if(isGameStarted == true)
+		if(StateController.Get().InGame())
 		{
 			if(isCoinInstance == false)
 			{
@@ -64,7 +64,7 @@ public class Main : MonoBehaviour {
 	}
 	void Update()
 	{
-		if(isGameStarted == true)
+		if(StateController.Get().InGame())
 		{
 			if(scoreint > 7) currentlevel = 2;
 			if(scoreint > 18) currentlevel = 3;
@@ -89,12 +89,12 @@ public class Main : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider col)
 	{
-        if (isGameStarted == true)
+        if (StateController.Get().InGame())
 		{
 			if(col.tag == "Enemy")
 			{
 				joystick.gameObject.SetActive(false);
-				isGameStarted = false;
+                StateController.Get().CurrentState = GAME_STATES.OUT_GAME;
 				gameoverpanel.gameObject.SetActive(true);
 				yourscore.text = "your score: " + (scoreint - 1);
 				bestscore.text = "your best: " + PlayerPrefs.GetInt("bestscore");
