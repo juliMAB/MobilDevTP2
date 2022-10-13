@@ -19,10 +19,15 @@ public class Main : MonoBehaviour {
 	{
 		rect = buttons.GetComponent<RectTransform>();
 		StateController.Get().CurrentState = GAME_STATES.OUT_GAME; // llamar en el gm.
-		InvokeRepeating("Level1", 0, 3f);
-		InvokeRepeating("Level2", 0, 2f);
-		InvokeRepeating("Level3", 0, 1.25f);
-		InvokeRepeating("Coins", 0, 9f);
+		System.Action lvlRef = this.Level1;
+
+		InvokeRepeating(lvlRef.Method.Name, 0, 3f);
+        lvlRef = this.Level2;
+        InvokeRepeating(lvlRef.Method.Name, 0, 2f);
+        lvlRef = this.Level3;
+        InvokeRepeating(lvlRef.Method.Name, 0, 1.25f);
+        lvlRef = this.Coins;
+        InvokeRepeating(lvlRef.Method.Name, 0, 9f);
 		scoreint = 0;
 		currentlevel = 1;
 		isCoinInstance = false;
