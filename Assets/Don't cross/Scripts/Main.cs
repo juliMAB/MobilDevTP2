@@ -7,38 +7,9 @@ using UnityEngine.SceneManagement;
 public class Main : MonoBehaviour {
 
 	public Canvas settings, shop;
-	public Image gamename;
-	public Text score, yourscore, bestscore, balancetext;
-	public GameObject buttons, /*enemy*/ joystick, gameoverpanel, balance /*coin*/;
-	//public bool /*isGameStarted,*/ isCoinInstance;
-	private RectTransform rect;
-	//private int scoreint;
-	//private static int currentlevel;
-	public LayerMask enemyLayer;
-    void Start()
-	{
-		rect = buttons.GetComponent<RectTransform>();
-		StateController.Get().CurrentState = GAME_STATES.OUT_GAME; // llamar en el gm.
+	public Text score, yourscore, bestscore;
+	public GameObject joystick, gameoverpanel, balance;
 
-		//scoreint = 0;
-        StateController.Get().CurrentLevel = 1;
-		
-	}
-
-	void Update()
-	{
-		if(StateController.Get().InGame())
-		{
-			if(gamename.rectTransform.offsetMax.y < 200 && gamename.rectTransform.offsetMin.y > -200)
-			{
-				gamename.rectTransform.offsetMin = new Vector2(gamename.rectTransform.offsetMin.x, gamename.rectTransform.offsetMin.y + 200f * Time.deltaTime);
-				gamename.rectTransform.offsetMax = new Vector2(gamename.rectTransform.offsetMax.x, gamename.rectTransform.offsetMax.y + 200f * Time.deltaTime);
-				rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y - 300f * Time.deltaTime);
-				rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y - 300f * Time.deltaTime);
-			}
-			balancetext.text = PlayerPrefs.GetInt("balance") + "";
-		}
-	}
 	public void Settings()
 	{
 		settings.gameObject.SetActive(true);

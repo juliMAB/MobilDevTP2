@@ -20,18 +20,25 @@ public class StateController : MonoBehaviourSingleton<StateController>
         set 
         {
             currentScore = value;
-            if (currentLevel < 7) return;
-            if (currentLevel > 18) {
+            if (CurrentScore < 7) return;
+            if (CurrentScore > 18) {
                 currentLevel = 3; 
                 return; 
             }
-            if (currentLevel > 7)
+            if (CurrentScore > 7)
             {
                 currentLevel = 2;
                 return;
             }
         } 
     }
+
+    void Start()
+    {
+        CurrentState = GAME_STATES.OUT_GAME;
+        CurrentLevel = 1;
+    }
+
 
     public bool InGame()
     {

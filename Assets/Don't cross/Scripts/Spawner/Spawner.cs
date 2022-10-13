@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,8 +9,9 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        System.Action lvlRef = this.Level1;
+        System.Action lvlRef;
 
+        lvlRef = this.Level1;
         InvokeRepeating(lvlRef.Method.Name, 0, 3f);
         lvlRef = this.Level2;
         InvokeRepeating(lvlRef.Method.Name, 0, 2f);
@@ -20,12 +19,6 @@ public class Spawner : MonoBehaviour
         InvokeRepeating(lvlRef.Method.Name, 0, 1.25f);
         lvlRef = this.Coins;
         InvokeRepeating(lvlRef.Method.Name, 0, 9f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void EnemySpawn()
@@ -61,7 +54,7 @@ public class Spawner : MonoBehaviour
         {
             if (instanceCoint == null)
             {
-                instanceCoint =Instantiate(coin, new Vector3(Random.Range(-3.8f, 3.8f), 11.15f, Random.Range(-5f, 5f)), Quaternion.identity);
+                instanceCoint = Instantiate(coin, new Vector3(Random.Range(-3.8f, 3.8f), 11.15f, Random.Range(-5f, 5f)), Quaternion.identity);
             }
         }
     }
