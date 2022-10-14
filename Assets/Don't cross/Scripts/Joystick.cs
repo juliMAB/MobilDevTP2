@@ -7,14 +7,12 @@ public class Joystick : MonoBehaviour
     public Image joystick;
     private float speed = 2f;
     public GameObject character;
-    
+
     void OnMouseDown()
     {
         if(!StateController.Get().InGame())
         {
-            StateController.Get().CurrentState = GAME_STATES.IN_GAME;
-            character.GetComponent<Main>().score.gameObject.SetActive(true);
-            character.GetComponent<Main>().balance.gameObject.SetActive(true);
+            StateController.Get().StartGame();
         } 
     }
     private void OnMouseDrag()

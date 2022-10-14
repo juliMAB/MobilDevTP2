@@ -32,20 +32,20 @@ public class Spawner : MonoBehaviour
 
     void Level1() // INCLUDES SCORE CONTROLLER
     {
-        if (StateController.Get().InGame() && StateController.Get().CurrentLevel == 1) EnemySpawn();
+        if (StateController.Get().InGame() && DataController.Get().CurrentLevel == 1) EnemySpawn();
         if (StateController.Get().InGame())
         {
-            score.text = (StateController.Get().CurrentScore++) + "";
-            if (StateController.Get().CurrentScore > PlayerPrefs.GetInt("bestscore")) PlayerPrefs.SetInt("bestscore", StateController.Get().CurrentScore - 1);
+            score.text = (DataController.Get().CurrentScore++) + "";
+            if (DataController.Get().CurrentScore > PlayerPrefs.GetInt("bestscore")) PlayerPrefs.SetInt("bestscore", DataController.Get().CurrentScore - 1);
         }
     }
     void Level2()
     {
-        if (StateController.Get().InGame() && StateController.Get().CurrentLevel == 2) EnemySpawn();
+        if (StateController.Get().InGame() && DataController.Get().CurrentLevel == 2) EnemySpawn();
     }
     void Level3()
     {
-        if (StateController.Get().InGame() && StateController.Get().CurrentLevel == 3) EnemySpawn();
+        if (StateController.Get().InGame() && DataController.Get().CurrentLevel == 3) EnemySpawn();
     }
 
     void Coins()
