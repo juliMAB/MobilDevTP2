@@ -43,6 +43,10 @@ public class CanvasAnim : MonoBehaviourSingleton<CanvasAnim>
     {
         score.text = DataController.Get().CurrentScore.ToString();
     }
+    public void UpdateBalance()
+    {
+        balancetext.text = DataController.Get().Balance.ToString();
+    }
     public void UpdateEndScore()
     {
         yourscore.text = "your score: " + DataController.Get().CurrentScore--;
