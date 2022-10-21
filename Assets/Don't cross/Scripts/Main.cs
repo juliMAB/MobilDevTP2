@@ -9,17 +9,10 @@ public class Main : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col)
 	{
-        if (StateController.Get().InGame())
-		{
-			if(col.tag == "Enemy")
-			{
-				GamePlayController.Get().EndGame();
-			}
-			if(col.tag == "Coin")
-			{
-				DataController.Get().Balance++;
-				Destroy(col.gameObject);
-			} 
-		}
-	}
+		if (!StateController.Get().InGame())
+			return;
+        if (col.tag != "Enemy")
+            return;
+        GamePlayController.Get().EndGame();
+    }
 }
