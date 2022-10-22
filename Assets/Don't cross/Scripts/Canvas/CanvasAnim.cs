@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class CanvasAnim : MonoBehaviourSingleton<CanvasAnim>
 {
-    public GameObject buttons, balance;
+    public GameObject buttons, balance, gameCanvas;
 
     public Image gamename;
 
@@ -21,15 +21,15 @@ public class CanvasAnim : MonoBehaviourSingleton<CanvasAnim>
     {
         StateController.Get().OnGoGame += () => { score.gameObject.SetActive(true); };
         StateController.Get().OnGoGame += () => { balance.SetActive(true); };
+        StateController.Get().OnGoGame += () => { gameCanvas.SetActive(true); };
         
         rect = buttons.GetComponent<RectTransform>();
+        UpdateBalance();
     }
 
     void Update()
     {
         if (!StateController.Get().InGame()) return;
-
-        balancetext.text = PlayerPrefs.GetInt("balance") + "";
 
         if(endAnim) return;
         endAnim = !(gamename.rectTransform.offsetMax.y < 200 && gamename.rectTransform.offsetMin.y > -200);

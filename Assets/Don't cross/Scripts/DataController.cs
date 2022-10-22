@@ -19,22 +19,26 @@ public class DataController : MonoBehaviourSingleton<DataController>
         set
         {
             currentScore = value;
-            if (CurrentScore < 7) return;
-            if (CurrentScore > 18)
-            {
-                currentLevel = 3;
-                return;
-            }
-            if (CurrentScore > 7)
-            {
-                currentLevel = 2;
-                return;
-            }
+            UpdateLevel();
             CanvasAnim.Get().UpdateScore();
         }
     }
+    private void UpdateLevel()
+    {
+        if (CurrentScore < 7) return;
+        if (CurrentScore > 18)
+        {
+            currentLevel = 3;
+            return;
+        }
+        if (CurrentScore > 7)
+        {
+            currentLevel = 2;
+            return;
+        }
+    }
 
-    public int Balance { get => balance; set => balance = value; }
+    public int Balance { get  => balance; set { balance = value; CanvasAnim.Get().UpdateBalance(); } }
     public int MaxScore { get => maxScore; set => maxScore = value; }
 
     private void Start()
@@ -42,8 +46,8 @@ public class DataController : MonoBehaviourSingleton<DataController>
         CurrentLevel = 1;
         maxScore = PlayerPrefs.GetInt("bestscore");
         balance = PlayerPrefs.GetInt("balance");
-        GamePlayController.Get().OnEndGame += Savebalance;
-        GamePlayController.Get().OnEndGame += SaveMaxScore;
+        StateController.Get().OnEndGame += Savebalance;
+        StateController.Get().OnEndGame += SaveMaxScore;
     }
     public void Savebalance()
     {

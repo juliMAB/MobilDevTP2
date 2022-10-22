@@ -3,15 +3,20 @@ using UnityEngine;
 
 public class GamePlayController : MonoBehaviourSingleton<GamePlayController>
 {
-    public GameObject joystick = null;
+    public VariableJoystick variableJoystick;
     public GameObject gameoverpanel = null;
-    public Action OnEndGame;
+    
 
 
-    private void Start()=> OnEndGame += EndGame;
+    private void Start()=> StateController.Get().OnEndGame += EndGame;
     public void EndGame()
     {
-        joystick.SetActive(false);
+        variableJoystick.gameObject.SetActive(false);
         gameoverpanel.SetActive(true);
+    }
+    public void Update()
+    {
+        if (!StateController.Get().InGame() && (new Vector3(variableJoystick.Vertical, variableJoystick.Horizontal, 0f) != Vector3.zero))
+            StateController.Get().StartGame();
     }
 }

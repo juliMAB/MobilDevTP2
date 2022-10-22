@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class Spawner : MonoBehaviour
 {
     public GameObject enemy, coin;
-    public Text score;
     private GameObject instanceCoint = null;
     // Start is called before the first frame update
     void Start()
@@ -19,6 +18,7 @@ public class Spawner : MonoBehaviour
         InvokeRepeating(lvlRef.Method.Name, 0, 1.25f);
         lvlRef = this.Coins;
         InvokeRepeating(lvlRef.Method.Name, 0, 9f);
+        StateController.Get().OnEndGame += StopSpawns;
     }
 
     void EnemySpawn()
@@ -28,16 +28,18 @@ public class Spawner : MonoBehaviour
         Instantiate(enemy, new Vector3(Random.Range(-6f, 6f), 11, -27), Quaternion.identity);
         Instantiate(enemy, new Vector3(-27, 11, Random.Range(-6f, 6f)), Quaternion.identity);
     }
+    void StopSpawns()
+    {
+        CancelInvoke();
+    }
 
 
     void Level1() // INCLUDES SCORE CONTROLLER
     {
-        if (StateController.Get().InGame() && DataController.Get().CurrentLevel == 1) EnemySpawn();
-        if (StateController.Get().InGame())
-        {
-            score.text = (DataController.Get().CurrentScore++) + "";
-            if (DataController.Get().CurrentScore > PlayerPrefs.GetInt("bestscore")) PlayerPrefs.SetInt("bestscore", DataController.Get().CurrentScore - 1);
-        }
+        if (!StateController.Get().InGame())
+            return;
+        if (DataController.Get().CurrentLevel == 1) EnemySpawn();
+        DataController.Get().CurrentScore++;
     }
     void Level2()
     {

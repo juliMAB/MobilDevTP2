@@ -13,6 +13,6 @@ public class Player : MonoBehaviour {
 			return;
         if (col.tag != "Enemy")
             return;
-        GamePlayController.Get().EndGame();
+        StateController.Get().OnEndGame?.Invoke();
     }
 }

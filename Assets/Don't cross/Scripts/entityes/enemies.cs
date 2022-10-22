@@ -37,8 +37,6 @@ public class enemies : MonoBehaviour {
 		transform.Rotate(new Vector3(1, 1, -1));
 		if(fromside == 2) transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x + direction, 11, transform.position.z), speed * Time.deltaTime);
 		if(fromside == 1) transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, 11, transform.position.z + direction), speed * Time.deltaTime);
-		
-		
 	}
 
 	void OnTriggerEnter(Collider col)
