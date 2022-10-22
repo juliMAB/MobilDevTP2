@@ -25,6 +25,7 @@ public class CanvasAnim : MonoBehaviourSingleton<CanvasAnim>
         
         rect = buttons.GetComponent<RectTransform>();
         UpdateBalance();
+        StateController.Get().OnEndGame += UpdateEndScore;
     }
 
     void Update()
