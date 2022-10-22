@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Settings : MonoBehaviour {
 
-	public Canvas settings;
+	public GameObject settings;
 	public Image on, off;
 	public AudioSource pf_music;
 	private AudioSource music;

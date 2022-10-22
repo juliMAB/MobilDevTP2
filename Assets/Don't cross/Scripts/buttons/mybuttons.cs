@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class mybuttons : MonoBehaviour
 {
-    public Canvas settings;
+    public GameObject settings;
 
     public void Shop () => SceneManager.LoadScene("Shop");
 
@@ -11,6 +11,6 @@ public class mybuttons : MonoBehaviour
 
     public void Settings()
     {
-        settings.gameObject.SetActive(true);
+        settings.SetActive(true);
     }
 }

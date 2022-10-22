@@ -7,13 +7,11 @@ public class Coins : MonoBehaviour {
 	}
     void OnTriggerEnter(Collider col)
     {
-        if (StateController.Get().InGame())
-        {
-            if (col.tag == "Player")
-            {
-                DataController.Get().Balance++;
-                Destroy(gameObject);
-            }
-        }
+        if (!StateController.Get().InGame())
+            return;
+        if (col.tag != "Player")
+            return;
+        DataController.Get().Balance++;
+        Destroy(gameObject);
     }
 }

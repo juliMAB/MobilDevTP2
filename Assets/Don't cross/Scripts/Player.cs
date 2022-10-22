@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Main : MonoBehaviour {
+public class Player : MonoBehaviour {
 
 
 	void OnTriggerEnter(Collider col)
