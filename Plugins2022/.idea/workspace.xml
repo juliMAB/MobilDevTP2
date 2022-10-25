@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc0d4cb2-17c2-4cbe-a4b3-9766ed35cb46" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Animations/InputField.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Animations/InputField.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Animations/RoundButton.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Animations/RoundButton.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Animations/Slider.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Animations/Slider.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Animations/SquareButton.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Animations/SquareButton.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Animations/Toggle.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Animations/Toggle.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Clean Settings UI.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Clean Settings UI.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Clean Settings UISettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Clean Settings UISettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-Bold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-BoldItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-ExtraBold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-ExtraBoldItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-Italic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-Light.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-LightItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-Semibold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-Semibold.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-SemiboldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Fonts/OpenSans-SemiboldItalic.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/backgrounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/backgrounds/background1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/backgrounds/background1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/backgrounds/background2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/backgrounds/background2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/backgrounds/background3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/backgrounds/background3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/container.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/container.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/arrow_down.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/arrow_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/arrow_left.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/arrow_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/arrow_right.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/arrow_up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/cancel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/confirm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/confirm.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/pause.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/redo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/icons/settings.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/line_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/line_background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/line_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/line_disabled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/line_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/line_hover.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/line_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/line_up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/round_button_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/round_button_disabled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/round_button_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/round_button_down.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/round_button_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/round_button_hover.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/round_button_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/round_button_up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/scrollhandle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/scrollhandle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/square_button_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/square_button_disabled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/square_button_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/square_button_down.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/square_button_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/square_button_hover.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/square_button_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/square_button_up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/toggle_background_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/toggle_background_disabled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/toggle_background_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/toggle_background_down.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/toggle_background_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/toggle_background_hover.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/toggle_background_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/toggle_background_up.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/toggle_checkmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/toggle_checkmark.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/toggle_checkmark_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Images/toggle_checkmark_disabled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Bar.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Bar.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Description text - Dark.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Description text - Dark.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Description text - Light.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Description text - Light.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Header - Dark.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Header - Dark.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Header - Light.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Header - Light.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/InputField.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/InputField.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/RoundButton.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/RoundButton.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Scrollbar.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Scrollbar.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Slider.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Slider.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/SquareButton.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/SquareButton.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Sub header - Dark.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Sub header - Dark.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Sub header - Light.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Sub header - Light.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Toggle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Clean Settings UI/Prefabs/Toggle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Documentaion.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Documentaion.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Examples/Example Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Examples/Example Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Examples/Ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Examples/Ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Examples/JoystickPlayerExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Examples/JoystickSetterExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Examples/JoystickSetterExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Examples/Player.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Examples/Player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Prefabs/Canvas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Prefabs/Canvas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Prefabs/Dynamic Joystick.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Prefabs/Dynamic Joystick.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Prefabs/Fixed Joystick.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Prefabs/Fixed Joystick.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Prefabs/Floating Joystick.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Prefabs/Floating Joystick.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Prefabs/Variable Joystick.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Prefabs/Variable Joystick.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Base.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Base/Joystick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Base/Joystick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Editor/FloatingJoystickEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Editor/FloatingJoystickEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Editor/JoystickEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Editor/JoystickEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Editor/VariableJoystickEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Editor/VariableJoystickEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Joysticks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline_Arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Outline_Arrows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Plain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Plain.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Plain_Arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Plain_Arrows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Ridged.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Ridged.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Ridged_Arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/All Axis Backgrounds/AllAxis_Ridged_Arrows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles/Handle_Outline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles/Handle_Outline.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles/Handle_Outline_Arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles/Handle_Outline_Arrows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles/Handle_Plain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles/Handle_Plain.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles/Handle_Plain_Arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles/Handle_Plain_Arrows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles/Handle_Ridged.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles/Handle_Ridged.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles/Handle_Ridged_Arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Handles/Handle_Ridged_Arrows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Outline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Outline.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Outline_Arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Outline_Arrows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Plain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Plain.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Plain_Arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Plain_Arrows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Ridged.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Ridged.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Ridged_Arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Horizontal Backgrounds/Horizontal_Ridged_Arrows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Outline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Outline.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Outline_Arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Outline_Arrows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Plain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Plain.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Plain_Arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Plain_Arrows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Ridged.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Ridged.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Ridged_Arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assets/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Ridged_Arrows.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Gdto1fRK35rRipVL3UVektwsvi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc0d4cb2-17c2-4cbe-a4b3-9766ed35cb46" name="Changes" comment="" />
+      <created>1666730459658</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666730459658</updated>
+    </task>
+    <servers />
+  </component>
+</project>
