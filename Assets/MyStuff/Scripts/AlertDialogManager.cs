@@ -5,13 +5,13 @@ public class AlertDialogManager : AndroidBaseClass
     AndroidJavaObject pluginInstance;
     public AlertDialogManager()
     {
-        InitializePlugin("com.pomelovolador.native_plugin.AlertClass");
+        InitializePlugin();
         CreateAlert();
     }
-    override protected void InitializePlugin(string pluginName)
+    override protected void InitializePlugin()
     {
-        base.InitializePlugin(pluginName);
-        pluginInstance = new AndroidJavaObject(pluginName);
+        base.InitializePlugin();
+        pluginInstance = new AndroidJavaObject("com.pomelovolador.native_plugin.AlertClass");
         if (pluginInstance==null)
         {
             Debug.Log("Plugin instance null!!");

@@ -10,6 +10,8 @@ public class CostomLogs
 
     static AndroidJavaObject JLoggerInstance = null;
 
+    public System.Action<string> OnAndroidCall;
+
     public CostomLogs()
     {
         InitializePlugin();
@@ -19,7 +21,6 @@ public class CostomLogs
         JLoggerClass = new AndroidJavaClass(PACK_NAME + "." + LOGGER_CLASS_NAME);
         JLoggerInstance = JLoggerClass.CallStatic<AndroidJavaObject>("GetInstance");
         Application.logMessageReceived += HandleLog;
-        //Application.logMessageReceivedThreaded += HandleLog;
     }
     void HandleLog(string logString, string stackTrace, LogType type)
     {
@@ -33,5 +34,6 @@ public class CostomLogs
             return;
         }
         JLoggerInstance.Call("SendLog", log);
+        OnAndroidCall.Invoke(log);
     }
 }

@@ -6,7 +6,7 @@ import android.util.Log;
 
 public class LoggerClass {
 
-    private static final String LOGTAG = "UnityPlugin=>";
+    private static final String LOGTAG = "UnityAndroidPlugin=>";
 
     public  static  final LoggerClass _instance = new LoggerClass();
 

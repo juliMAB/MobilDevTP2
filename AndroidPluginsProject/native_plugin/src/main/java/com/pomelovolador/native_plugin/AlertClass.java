@@ -6,7 +6,7 @@ import android.content.DialogInterface;
 import android.util.Log;
 
 public class AlertClass {
-    private static final String LOGTAG = "UnityPlugin";
+    private static final String LOGTAG = "UnityAndroidPlugin=>";
     private static Activity unityActivity;
     AlertDialog.Builder builder;
 
