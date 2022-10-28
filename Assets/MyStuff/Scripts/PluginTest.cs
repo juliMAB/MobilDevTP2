@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class PluginTest : MonoBehaviour
 {
     [SerializeField] private Button AlertButton;
+    [SerializeField] private Button logButton;
+    [SerializeField] private Button logButtonUnity;
     private AlertDialogManager alert;
+    private CostomLogs androidLogs;
 
     private void Start()
     {
@@ -16,56 +19,13 @@ public class PluginTest : MonoBehaviour
             return;
         }
         alert = new AlertDialogManager();
+        androidLogs = new CostomLogs();
         AlertButton.onClick.AddListener(alert.ShowAlert);
+        logButton.onClick.AddListener(ExampleLogCall);
     }
+    private void ExampleLogCall() => androidLogs.AndroidLog("example_Log_Button_OnClick");
 
-    //const string pluginName = "com.pomelovolador.unity.MyPlugin";
-    //
-    //static AndroidJavaClass _pluginClass;
-    //static AndroidJavaObject _pluginInstance;
-    //
-    //public static AndroidJavaClass PluginClass
-    //{
-    //    get {
-    //        if (_pluginClass==null)
-    //        {
-    //            _pluginClass = new AndroidJavaClass(pluginName);
-    //        }
-    //        return _pluginClass;
-    //    }
-    //}
-    //public static AndroidJavaObject PluginInstance
-    //{
-    //    get
-    //    {
-    //        if (_pluginInstance==null)
-    //        {
-    //            _pluginInstance = PluginClass.CallStatic<AndroidJavaObject>("getInstance");
-    //        }
-    //        return _pluginInstance;
-    //    }
-    //}
-    //float elapsedTime = 0;
-    //public double ElapsedTime { 
-    //    get 
-    //    {
-    //        if (Application.platform == RuntimePlatform.Android) 
-    //            return PluginInstance.Call<double>("getElapsedTime");
-    //        Debug.LogWarning("Wrong platform");
-    //        return 0;
-    //    } 
-    //}
-    //
-    //private void Start()
-    //{
-    //    Debug.Log("Elapsed Time: " + ElapsedTime);
-    //}
-    //
-    //private void Update()
-    //{
-    //    elapsedTime += Time.deltaTime;
-    //    Debug.Log("Tick: " + ElapsedTime);
-    //}
+    public void UnityLogCall() => Debug.Log("example_unity_Debug.Log");
 
 }
 
