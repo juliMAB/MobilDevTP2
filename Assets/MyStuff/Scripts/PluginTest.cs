@@ -40,6 +40,7 @@ public class PluginTest : MonoBehaviour
     private void ClearData()
     {
         fileManagerAndroid.ClearFile();
+        UpdateShowingText(" ");
     }
 
 
