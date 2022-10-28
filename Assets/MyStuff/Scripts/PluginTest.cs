@@ -1,15 +1,19 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PluginTest : MonoBehaviour
 {
+    //private AlertDialogManager alert;
+    private CostomLogs androidLogs;
+    private FileManagerAndroid fileManagerAndroid;
+    private Alert2DialogManager alert2DialogManager;
+
+
     [SerializeField] private Button AlertButton;
     [SerializeField] private Button logButton;
     [SerializeField] private Button logButtonUnity;
     [SerializeField] private Button ClearDataButton;
-    private AlertDialogManager alert;
-    private CostomLogs androidLogs;
-    private FileManagerAndroid fileManagerAndroid;
     [SerializeField] private TMPro.TextMeshProUGUI showeableText;
 
     private void Start()
@@ -19,14 +23,16 @@ public class PluginTest : MonoBehaviour
             Debug.LogWarning("Wrong platform");
             return;
         }
-        alert = new AlertDialogManager();
+        //alert = new AlertDialogManager();
         androidLogs = new CostomLogs();
         fileManagerAndroid = new FileManagerAndroid();
-        AlertButton.onClick.AddListener(alert.ShowAlert);
+        alert2DialogManager = new Alert2DialogManager();
+        //AlertButton.onClick.AddListener(alert.ShowAlert);
         logButton.onClick.AddListener(ExampleLogCall);
         logButtonUnity.onClick.AddListener(UnityLogCall);
-        ClearDataButton.onClick.AddListener(ClearData);
+        ClearDataButton.onClick.AddListener(ShowAlert);
         androidLogs.OnAndroidCall += UpdateShowingText;
+        UpdateShowingText("Start Test PluginExample");
     }
     private void ExampleLogCall() => androidLogs.AndroidLog("example_Log_Button_OnClick");
 
@@ -36,6 +42,13 @@ public class PluginTest : MonoBehaviour
     {
         fileManagerAndroid.WriteFile(msg + '\n');
         showeableText.text = fileManagerAndroid.ReadFile();
+    }
+    private void ShowAlert()
+    {
+        alert2DialogManager.showAlertDialog(new string[] { "POPAndroid", "ClearData?", "NO", "YES" }, (Int32 obj) => {
+            if (obj == -2)
+                ClearData();
+        });
     }
     private void ClearData()
     {
