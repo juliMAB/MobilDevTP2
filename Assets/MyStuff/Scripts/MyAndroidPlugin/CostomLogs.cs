@@ -34,6 +34,6 @@ public class CostomLogs
             return;
         }
         JLoggerInstance.Call("SendLog", log);
-        OnAndroidCall.Invoke(log);
+        OnAndroidCall?.Invoke(log);
     }
 }

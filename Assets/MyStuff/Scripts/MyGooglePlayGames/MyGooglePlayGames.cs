@@ -1,36 +1,29 @@
 using UnityEngine;
 using GooglePlayGames;
-using GooglePlayGames.BasicApi;
 
-public class MyGooglePlayGames : MonoBehaviour
+public static class MyGooglePlayGames
 {
 
     private static string achievement1ID = GPGSIds.achievement_hello_world;
     
-
-    void Start()
+    public static void Init()
     {
-        Init();
-    }
-    private void Init()
-    {
-        PlayGamesPlatform.Instance.Authenticate((callback) => { });
-        UnlockAchievement(achievement1ID);
+        PlayGamesPlatform.Instance.Authenticate((callback) => { UnlockAchievement(achievement1ID); });
     }
 
     static public void AddScoreToLeaderboard(int score)
     {
         if (Social.Active.localUser.authenticated)
         {
-            Social.ReportScore(score, "...", success => { Debug.Log("Se subio al leaderboard"); });
+            Social.ReportScore(score, "Timer Board", success => { Debug.Log("Se subio al leaderboard"); });
         }
     }
 
     static public void ShowLeaderboard()
     {
-        if (Social.Active.localUser.authenticated)
+        if (PlayGamesPlatform.Instance.IsAuthenticated())
         {
-            //platform.ShowLeaderboardUI();
+            PlayGamesPlatform.Instance.ShowLeaderboardUI();
         }
     }
 
