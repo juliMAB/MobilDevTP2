@@ -8,7 +8,7 @@ public class PluginAndroid : MonoBehaviourSingleton<PluginAndroid>
     private FileManagerAndroid fileManagerAndroid;
     private Alert2DialogManager alert2DialogManager;
 
-    private void Start()
+    public void MyStart()
     {
         if (Application.platform != RuntimePlatform.Android)
         {
@@ -18,6 +18,7 @@ public class PluginAndroid : MonoBehaviourSingleton<PluginAndroid>
         androidLogs = new CostomLogs();
         fileManagerAndroid = new FileManagerAndroid();
         alert2DialogManager = new Alert2DialogManager();
+        androidLogs.OnAndroidCall+=fileManagerAndroid.WriteFile;
     }
     private void WriteFile(string msg)
     {
