@@ -39,7 +39,7 @@ public class ShopController : MonoBehaviour
             Alert.GetComponent<TextMeshProUGUI>().text = "Equiped";
             ShopData.material = showMaterial;
             Debug.Log("equipaste el color: " + showMaterial.color.ToString());
-
+            DataManager.SaveData();
         }
         else if (Data.currency >= price[index])
         {
@@ -47,6 +47,7 @@ public class ShopController : MonoBehaviour
             ShopData.Unlocked[index]=true;
             Alert.GetComponent<TextMeshProUGUI>().text = "Buy!!";
             Debug.Log("realizaste una compra");
+            DataManager.SaveData();
         }
         else
         {
