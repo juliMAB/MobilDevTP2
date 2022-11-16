@@ -1,11 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class HACKS : MonoBehaviour
 {
-    public void AddExtraMoney()
-    {
-        DataManager.Get().Gold += int.MaxValue;
-    }
+    public void AddExtraMoney() => Data.currency += int.MaxValue;
 }

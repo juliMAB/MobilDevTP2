@@ -11,7 +11,6 @@ public class ShopController : MonoBehaviour
     [SerializeField] GameObject Alert;
     [SerializeField] TextMeshProUGUI BuyButton;
     [SerializeField] TextMeshProUGUI priceText;
-    //Price: 10;
     int index =0;
 
     public void Next()
@@ -35,24 +34,24 @@ public class ShopController : MonoBehaviour
     public void Buy()
     {
         Alert.SetActive(true);
-        if (DataManager.Get().Unlocked[index] == true)
+        if (ShopData.Unlocked[index] == true)
         {
             Alert.GetComponent<TextMeshProUGUI>().text = "Equiped";
-            DataManager.Get().Material = showMaterial;
-            JLogger.SendLog("equipaste el color: " + showMaterial.color.ToString());
+            ShopData.material = showMaterial;
+            Debug.Log("equipaste el color: " + showMaterial.color.ToString());
 
         }
-        else if (DataManager.Get().Gold>=price[index])
+        else if (Data.currency >= price[index])
         {
-            DataManager.Get().Gold -= price[index];
-            DataManager.Get().Unlocked[index]=true;
+            Data.currency -= price[index];
+            ShopData.Unlocked[index]=true;
             Alert.GetComponent<TextMeshProUGUI>().text = "Buy!!";
-            JLogger.SendLog("realizaste una compra");
+            Debug.Log("realizaste una compra");
         }
         else
         {
             Alert.GetComponent<TextMeshProUGUI>().text = "No Money!!";
-            JLogger.SendLog("no tienes dinero para esta compra");
+            Debug.Log("no tienes dinero para esta compra");
         }
         Alert.GetComponent<Animator>().Play("a");
         Invoke(nameof(AlertDisabled), 2);
@@ -64,7 +63,7 @@ public class ShopController : MonoBehaviour
     }
     void UpdateLetter()
     {
-        if (DataManager.Get().Unlocked[index] == true)
+        if (ShopData.Unlocked[index] == true)
         {
             BuyButton.text = "E";
             priceText.text = " ";
