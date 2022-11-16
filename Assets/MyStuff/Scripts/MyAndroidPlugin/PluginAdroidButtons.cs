@@ -6,7 +6,7 @@ public class PluginAdroidButtons : MonoBehaviour
     [SerializeField] private Button OnGoPluginButton;
     [SerializeField] private TMPro.TextMeshProUGUI showeableText;
 
-    private void Start()
+    private void Awake()
     {
         if (Application.platform != RuntimePlatform.Android)
         {
@@ -14,9 +14,10 @@ public class PluginAdroidButtons : MonoBehaviour
             return;
         }
         ClearDataButton.onClick.AddListener(ShowAlert);
-        OnGoPluginButton.onClick.AddListener(() => { showeableText.text = PluginAndroid.Get()?.GetFile(); });
+        OnGoPluginButton.onClick.AddListener(UpdateText);
     }
 
     private void ShowAlert() => PluginAndroid.Get()?.CallAlert("ALERT", "clear?", "yes", "no", PluginAndroid.Get().CallClear);
-    
+
+    private void UpdateText() => showeableText.text = PluginAndroid.Get()?.GetFile();
 }

@@ -10,7 +10,7 @@ public class mybuttons : MonoBehaviour
 
     public void GoShop () => SceneManager.LoadScene("Shop");
 
-    public void RestartGame() => SceneManager.LoadScene("Main");
+    public void RestartGame() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     public void Settings()
     {

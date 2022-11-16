@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class ShopController : MonoBehaviour
@@ -11,40 +9,38 @@ public class ShopController : MonoBehaviour
     [SerializeField] GameObject Alert;
     [SerializeField] TextMeshProUGUI BuyButton;
     [SerializeField] TextMeshProUGUI priceText;
-    int index =0;
-
     public void Next()
     {
-        index++;
-        if (index >= color.Length)
-            index = 0;
-        showMaterial.color = color[index];
-        priceText.text = "Price: " + price[index];
+        ShopData.shopIndex++;
+        if (ShopData.shopIndex >= color.Length)
+            ShopData.shopIndex = 0;
+        showMaterial.color = color[ShopData.shopIndex];
+        priceText.text = "Price: " + price[ShopData.shopIndex];
         UpdateLetter();
     }
     public void Previous()
     {
-        index--;
-        if (index<0)
-            index = price.Length-1;
-        showMaterial.color = color[index];
-        priceText.text = "Price: " + price[index];
+        ShopData.shopIndex--;
+        if (ShopData.shopIndex<0)
+            ShopData.shopIndex = price.Length-1;
+        showMaterial.color = color[ShopData.shopIndex];
+        priceText.text = "Price: " + price[ShopData.shopIndex];
         UpdateLetter();
     }
     public void Buy()
     {
         Alert.SetActive(true);
-        if (ShopData.Unlocked[index] == true)
+        if (ShopData.Unlocked[ShopData.shopIndex] == true)
         {
             Alert.GetComponent<TextMeshProUGUI>().text = "Equiped";
             ShopData.material = showMaterial;
             Debug.Log("equipaste el color: " + showMaterial.color.ToString());
             DataManager.SaveData();
         }
-        else if (Data.currency >= price[index])
+        else if (Data.currency >= price[ShopData.shopIndex])
         {
-            Data.currency -= price[index];
-            ShopData.Unlocked[index]=true;
+            Data.currency -= price[ShopData.shopIndex];
+            ShopData.Unlocked[ShopData.shopIndex]=true;
             Alert.GetComponent<TextMeshProUGUI>().text = "Buy!!";
             Debug.Log("realizaste una compra");
             DataManager.SaveData();
@@ -64,7 +60,7 @@ public class ShopController : MonoBehaviour
     }
     void UpdateLetter()
     {
-        if (ShopData.Unlocked[index] == true)
+        if (ShopData.Unlocked[ShopData.shopIndex] == true)
         {
             BuyButton.text = "E";
             priceText.text = " ";

@@ -1,13 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour {
 
+    private void Start()
+    {
+        if (ShopData.material)
+            GetComponent<Renderer>().material.color = ShopData.material.color;
+    }
 
-	void OnTriggerEnter(Collider col)
+
+    void OnTriggerEnter(Collider col)
 	{
 		if (!StateController.Get().InGame())
 			return;
