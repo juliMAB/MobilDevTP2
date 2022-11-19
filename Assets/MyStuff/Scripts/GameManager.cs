@@ -1,8 +1,7 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviourSingleton<GameManager>
 {
-    
     void Start()
     {
         PluginAndroid.Get().MyStart(); //init de mi plugin.

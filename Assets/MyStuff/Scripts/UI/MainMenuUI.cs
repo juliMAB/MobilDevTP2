@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuUI : MonoBehaviour
@@ -23,7 +24,7 @@ public class MainMenuUI : MonoBehaviour
         CurrencyUIGO.SetActive(true);
         MenuUIGO.SetActive(true);
 
-        bt_play.onClick.AddListener(() => { Debug.Log("Not Implemented."); });
+        bt_play.onClick.AddListener(() => { Debug.Log("play"); SceneManager.LoadScene(1); });
         
         bt_MenugoPlugin.onClick.AddListener(() => { MenuUIGO.SetActive(false); CurrencyUIGO.SetActive(false); PluginsUIGO.SetActive(true); });
         bt_PluginGoMenu.onClick.AddListener(() => { MenuUIGO.SetActive(true); CurrencyUIGO.SetActive(true); PluginsUIGO.SetActive(false); });

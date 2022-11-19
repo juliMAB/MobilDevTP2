@@ -15,7 +15,7 @@ public static class MyGooglePlayGames
     {
         if (Social.Active.localUser.authenticated)
         {
-            Social.ReportScore(score, "Timer Board", success => { Debug.Log("Se subio al leaderboard"); });
+            PlayGamesPlatform.Instance.ReportScore(score, "Timer Board", success => { Debug.Log("Se subio al leaderboard"); });
         }
     }
 

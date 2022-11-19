@@ -1,10 +1,14 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public static class DataManager
 {
     static string currencyKey = "CK";
     static string MaxTimeKey = "MTK";
     static string UnlokedKey = "SHUK";
+    public static Action onUpdateCurrency;
+    public static Action onUpdateTime;
     public static void LoadData()
     {
         Debug.Log("DataManager.LoadData");
@@ -41,6 +45,14 @@ public static class DataManager
                 PlayerPrefs.SetInt(UnlokedKey + i.ToString(), 0);
         }
     }
-
-
+    public static void UpdateMoney(int currency)
+    {
+        Data.currency = currency;
+        onUpdateCurrency?.Invoke();
+    }
+    public static void UpdateTimer(int time)
+    {
+        Data.currentTimer = time;
+        onUpdateTime?.Invoke();
+    }
 }
