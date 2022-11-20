@@ -5,6 +5,8 @@ public class GameplayManager : MonoBehaviour
     [SerializeField] GameObject[] tutoBloq;
 
     [SerializeField] GameObject EndPanel;
+    
+    [SerializeField] GameObject PausePanel;
 
     private void Start()
     {
@@ -21,7 +23,7 @@ public class GameplayManager : MonoBehaviour
 
     public void ChangeToPause()
     {
-        StateManager.TooglePause();
+        PausePanel.SetActive(StateManager.TooglePause());
     }
     private void IntroToGame()
     {

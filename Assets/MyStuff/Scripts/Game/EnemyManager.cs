@@ -11,6 +11,8 @@ public class EnemyManager : MonoBehaviour
 
     [SerializeField] private float spawnTime;
 
+    [SerializeField] private float addedmodif;
+
     private float dt = 0;
 
     private void Update()
@@ -24,6 +26,8 @@ public class EnemyManager : MonoBehaviour
         }
         dt = 0;
         SendNewPoolObject();
+        spawnTime -= addedmodif;
+        speed += addedmodif;
     }
 
     private void SendNewPoolObject()

@@ -2,5 +2,5 @@
 
 public class HACKS : MonoBehaviour
 {
-    public void AddExtraMoney() => Data.currency += int.MaxValue;
+    public void AddExtraMoney() => Data.currency ++;
 }

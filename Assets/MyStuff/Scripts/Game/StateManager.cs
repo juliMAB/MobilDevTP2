@@ -19,18 +19,21 @@ public class StateManager
     {
         return currentState == STATE.GAME;
     }
-    public static void TooglePause()
+    public static bool TooglePause()
     {
         if (currentState!=STATE.PAUSE)
         {
             lastState = currentState;
             currentState = STATE.PAUSE;
+            return true;
         }
         else if (currentState==STATE.PAUSE)
         {
             currentState = lastState;
             lastState = STATE.PAUSE;
+            return false;
         }
+        return false;
     }
 
 }
