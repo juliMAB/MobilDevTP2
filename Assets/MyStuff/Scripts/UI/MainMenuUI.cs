@@ -1,3 +1,5 @@
+using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -19,6 +21,9 @@ public class MainMenuUI : MonoBehaviour
 
     [SerializeField] Button bt_PluginGoMenu;
 
+    [SerializeField] TextMeshProUGUI currencyText;
+    [SerializeField] TextMeshProUGUI maxTimeText;
+
     private void Start()
     {
         CurrencyUIGO.SetActive(true);
@@ -35,6 +40,16 @@ public class MainMenuUI : MonoBehaviour
         bt_MenuGoLiderBoard.onClick.AddListener(() => { Debug.Log("Show LiderBoard"); MyGooglePlayGames.ShowLeaderboard(); });
         bt_MenuGoAchivements.onClick.AddListener(() => { Debug.Log("Show Achivement"); MyGooglePlayGames.ShowAchievements(); });
 
+        System.Action action = updateData;
+        Invoke(action.Method.Name, 0.5f);
+
+    }
+    void updateData()
+    {
+        currencyText.text = Data.currency.ToString();
+
+        TimeSpan tS = TimeSpan.FromSeconds(Data.maxSeconds);
+        maxTimeText.text = tS.Minutes.ToString() + ":" + tS.Seconds.ToString() + ":" + tS.Milliseconds.ToString();
     }
 
 }
