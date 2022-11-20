@@ -7,8 +7,6 @@ public class EnemyManager : MonoBehaviour
 
     [SerializeField] private List<Obstacle> Obstacles = null;
 
-    [SerializeField] private float spawnPositionZ;
-
     [SerializeField] private float speed;
 
     [SerializeField] private float spawnTime;
@@ -24,6 +22,7 @@ public class EnemyManager : MonoBehaviour
             dt += Time.deltaTime;
             return;
         }
+        dt = 0;
         SendNewPoolObject();
     }
 

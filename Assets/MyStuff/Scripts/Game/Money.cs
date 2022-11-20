@@ -2,14 +2,14 @@
 
 public class Money : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    [SerializeField] LayerMask layerMask;
 
-    public UnityEngine.Events.UnityAction onPlayerPickup;
-
-    public void MyStart(UnityEngine.Events.UnityAction onPlayerPickup) => this.onPlayerPickup = onPlayerPickup;
     private void OnTriggerEnter(Collider other)
     {
-        if (player == other.gameObject)
-            onPlayerPickup?.Invoke();
+        if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
+        {
+            DataManager.UpdateMoney(Data.currency + 1);
+            Destroy(gameObject);
+        }
     }
 }
