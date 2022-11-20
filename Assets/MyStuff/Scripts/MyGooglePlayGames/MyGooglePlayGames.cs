@@ -6,6 +6,7 @@ public static class MyGooglePlayGames
 
     private static string achievement1ID = GPGSIds.achievement_hello_world;
     
+    
     public static void Init()
     {
         PlayGamesPlatform.Instance.Authenticate((callback) => { UnlockAchievement(achievement1ID); });
@@ -13,7 +14,7 @@ public static class MyGooglePlayGames
 
     static public void AddScoreToLeaderboard(int score)
     {
-        if (Social.Active.localUser.authenticated)
+        if (PlayGamesPlatform.Instance.IsAuthenticated())
         {
             PlayGamesPlatform.Instance.ReportScore(score, GPGSIds.leaderboard_timer_board, success => { Debug.Log("Se subio al leaderboard"); });
         }
