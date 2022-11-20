@@ -1,6 +1,6 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-public class Money : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     [SerializeField] LayerMask layerMask;
 
@@ -8,7 +8,7 @@ public class Money : MonoBehaviour
     {
         if ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
         {
-            DataManager.UpdateMoney(Data.currency + 1);
+            GameEnd.onEndGame();
             gameObject.SetActive(false);
         }
     }

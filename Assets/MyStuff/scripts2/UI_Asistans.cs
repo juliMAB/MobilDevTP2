@@ -14,7 +14,7 @@ public class UI_Asistans : MonoBehaviour
     private textWriterSingle textWriterSingle;
     public Action<int> OnIndexChange;
     public int MaxMessage;
-    private int index;
+    private int index=0;
 
     private void Awake()
     {
@@ -33,14 +33,14 @@ public class UI_Asistans : MonoBehaviour
             if (index < message.Length)
             {
                 string mesage = message[index];
-                textWriterSingle = textWriter.AddWriter_Static(messageText, mesage, speed, true, true, xd);
+                textWriterSingle = textWriter.AddWriter_Static(messageText, mesage, speed, true, true, null);
             }
         }
     }
-
-    private void xd()
+    public bool MyUpdate()
     {
-    
+        OnButton(index);
+        index++;
+        return index == MaxMessage;
     }
-
 }

@@ -15,7 +15,7 @@ public static class DataManager
 
         Data.currency = PlayerPrefs.GetInt(currencyKey);
 
-        Data.maxSeconds = PlayerPrefs.GetInt(MaxTimeKey);
+        Data.maxSeconds = PlayerPrefs.GetFloat(MaxTimeKey);
 
         for (int i = 0; i < ShopData.StoreStufs; i++)
         {
@@ -35,7 +35,7 @@ public static class DataManager
         Debug.Log("DataManager.SaveData");
         PlayerPrefs.SetInt(currencyKey, Data.currency);
 
-        PlayerPrefs.SetInt(MaxTimeKey, Data.maxSeconds);
+        PlayerPrefs.SetFloat(MaxTimeKey, Data.maxSeconds);
 
         for (int i = 0; i < ShopData.StoreStufs; i++)
         {

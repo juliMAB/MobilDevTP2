@@ -1,30 +1,19 @@
-using UnityEngine;
+using System;
 
-public class GameTutorial : MonoBehaviour
+public static class GameTutorial
 {
-    Animator animator;
+    static int tutorialObjectGet = 0;
 
-    int tutorialObjectGet = 0;
+    public static Action onEndTutorial;
 
-    int tutorialpart = 0;
-
-    public int TutorialObjectGet { get => tutorialObjectGet; set => tutorialObjectGet = value; }
-
-
-
-    public void Show_ok()
+    public static void AddTutorialItem()
     {
-        tutorialpart++;
-    }
-
-    public void Show_na()
-    {
-
-    }
-
-    private void Update()
-    {
-          
+        tutorialObjectGet ++;
+        if (tutorialObjectGet == 2)
+        {
+            onEndTutorial?.Invoke();
+            tutorialObjectGet = 0;
+        }
     }
 }
 
