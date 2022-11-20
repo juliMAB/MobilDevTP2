@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameTimer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        DataManager.UpdateTimer(0);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (!StateManager.InGame())
+            return;
+        DataManager.UpdateTimer(Data.currentTimer + Time.deltaTime);
     }
 }

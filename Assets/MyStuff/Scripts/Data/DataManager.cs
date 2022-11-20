@@ -50,7 +50,7 @@ public static class DataManager
         Data.currency = currency;
         onUpdateCurrency?.Invoke();
     }
-    public static void UpdateTimer(int time)
+    public static void UpdateTimer(float time)
     {
         Data.currentTimer = time;
         onUpdateTime?.Invoke();

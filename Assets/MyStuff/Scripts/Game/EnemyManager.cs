@@ -11,12 +11,23 @@ public class EnemyManager : MonoBehaviour
 
     [SerializeField] private float speed;
 
-    private void Start()
+    [SerializeField] private float spawnTime;
+
+    private float dt = 0;
+
+    private void Update()
     {
-        System.Action action = SendNewPoolObject;
-        InvokeRepeating(action.Method.Name, 0, 1);
+        if(!StateManager.InGame())
+            return;
+        if (dt<spawnTime)
+        {
+            dt += Time.deltaTime;
+            return;
+        }
+        SendNewPoolObject();
     }
-    public void SendNewPoolObject()
+
+    private void SendNewPoolObject()
     {
         foreach (var item in Obstacles)
             if (!item.gameObject.activeSelf)
