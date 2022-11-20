@@ -9,9 +9,6 @@ public class GameplayManager : MonoBehaviour
 
     public void ChangeToPause()
     {
-        if (StateManager.currentState == STATE.GAME)
-            StateManager.currentState = STATE.PAUSE;
-        else if (StateManager.currentState == STATE.PAUSE)
-            StateManager.currentState = STATE.GAME;
+        StateManager.TooglePause();
     }
 }
