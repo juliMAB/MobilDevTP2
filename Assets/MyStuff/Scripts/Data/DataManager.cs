@@ -49,10 +49,13 @@ public static class DataManager
     {
         Data.currency = currency;
         onUpdateCurrency?.Invoke();
+        if (currency >= 10)
+            MyGooglePlayGames.UnlockAchievement(GPGSIds.achievement_ahorrador);
     }
     public static void UpdateTimer(float time)
     {
         Data.currentTimer = time;
         onUpdateTime?.Invoke();
+
     }
 }

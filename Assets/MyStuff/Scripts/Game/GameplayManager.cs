@@ -34,7 +34,10 @@ public class GameplayManager : MonoBehaviour
         StateManager.currentState = STATE.END;
         EndPanel.gameObject.SetActive(true);
         if (Data.currentTimer>Data.maxSeconds)
+        {
             Data.maxSeconds = Data.currentTimer;
+            MyGooglePlayGames.AddScoreToLeaderboard((int)Data.maxSeconds);
+        }
         DataManager.SaveData();
     }
 
