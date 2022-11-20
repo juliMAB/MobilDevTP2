@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
+    [SerializeField] private GameObject SpawnpointBase;
+
     [SerializeField] private List<Obstacle> Obstacles = null;
 
     [SerializeField] private float spawnPositionZ;
@@ -19,7 +21,7 @@ public class EnemyManager : MonoBehaviour
         foreach (var item in Obstacles)
             if (!item.gameObject.activeSelf)
             {
-                item.Init(new Vector3(0,0, spawnPositionZ), speed);
+                item.Init(SpawnpointBase.transform.position + new Vector3(Random.Range(-5,5),0,0), speed);
                 return;
             }
         Debug.Log("no quedan mas go para esta pool");
